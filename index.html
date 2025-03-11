@@ -3,9 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assigment-5</title>
+    <title>DevBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Hello</h1>
+<body class="bg-blue-100 p-5" id="body-color-btn">
+    <nav class="bg-white shadow-md w-11/12 mx-auto p-4 rounded-lg flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <img src="/assets/logo.png" alt="Logo" class="h-8">
+            <span class="text-xl font-bold">Dev<span class="text-blue-500">Board</span></span>
+        </div>
+        <div class="flex items-center gap-4">
+            <div class="h-[40px] w-[60px] bg-slate-300 rounded-xl flex justify-center items-center gap-2">
+                <img class="h-5 w-5 cursor-pointer" src="assets/checkbox.png" alt="Profile">
+                <p class="font-bold">20</p>
+            </div>
+            <div class="relative">
+                <img class="h-10 w-10 rounded-full cursor-pointer" id="thm-btn" src="assets/theme-btn.png" alt="Profile">
+            </div>
+        </div>
+    </nav>
+
+    <main class="mt-8 w-11/12 mx-auto grid grid-cols-12 gap-6">
+        <!-- Left Panel -->
+        <section class="col-span-9 bg-white p-5 rounded-lg shadow-md">
+            <div class="flex justify-between items-center mb-4 h-[60px]">
+                <div class="flex items-center gap-2 bg-blue-100 p-3 rounded-lg">
+                    <span class="bg-blue-500 text-white px-2 py-1 rounded-full">05</span>
+                    <span>Task Assigned</span>
+                </div>
+                <div class="h-14 bg-gradient-to-bl from-[#9BA8F8] to-[#3752FD] text-white px-4 py-2 flex w-2/5 justify-center gap-4 rounded-lg">
+                    <img class="size-8" src="assets/board.png" alt="">
+                    <p class="text-sm">Discover Something <br> New Today!</p> 
+                 </div>
+
+                <div class="bg-gray-100 px-4 py-2 rounded-lg flex items-center">
+                    <div class="h-[50px] w-[50px] rounded-full bg-white flex justify-center items-center">
+                        <img class="h-[20px]" src="assets/calender.png" alt="">
+                    </div>
+                    <div class="ml-2">
+                        <p>Wed,</p>
+                        <p class="font-bold">Jul 28 2025</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-gray-100 p-4 rounded-lg shadow">
+                    <div class="flex justify-center h-[30px] w-[80px] bg-white rounded-md items-center">
+                        <h3 class="text-sm text-gray-500 text-center">ShopEase</h3>
+                    </div>
+                    <h2 class="font-semibold">Fix Mobile Button Issue</h2>
+                    <p class="text-sm text-gray-500">Debug using Chrome DevTools...</p>
+                    <p class="text-xs text-gray-400 mt-2">Deadline: 21 March 2025</p>
+                    <div class="flex mt-5 justify-between">
+                        <div>
+                            <h6 class="text-stone-400 text-sm">Deadline</h6>
+                            <h1 class="text-md font-bold">21 March 2025</h1>
+                        </div>
+                        <div class="flex items-center justify-center text-white h-[35px] text-center bg-blue-500 rounded-md p-3 m-0">
+                            <button class="btn text-sm">Completed</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow">
+                    <div class="flex justify-center h-[30px] w-[80px] bg-white rounded-md items-center">
+                        <h3 class="text-sm text-gray-500 text-center">CloudSync</h3>
+                    </div>
+                    <h2 class="font-semibold">Add Dark Mode</h2>
+                    <p class="text-sm text-gray-500">Store the user's preference...</p>
+                    <p class="text-xs text-gray-400 mt-2">Deadline: 21 March 2025</p>
+                    <div class="flex mt-5 justify-between">
+                        <div>
+                            <h6 class="text-stone-400 text-sm">Deadline</h6>
+                            <h1 class="text-md font-bold">21 March 2025</h1>
+                        </div>
+                        <div class="flex items-center justify-center text-white h-[35px] text-center bg-blue-500 rounded-md p-3 m-0">
+                            <button class="btn text-sm">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow">
+                    <div class="flex justify-center h-[30px] w-[80px] bg-white rounded-md items-center">
+                        <h3 class="text-sm text-gray-500 text-center">SwiftPay</h3>
+                    </div>
+                    <h2 class="font-semibold">Optimize Home Page</h2>
+                    <p class="text-sm text-gray-500">Debug using Chrome DevTools...</p>
+                    <p class="text-xs text-gray-400 mt-2">Deadline: 21 March 2025</p>
+                    <div class="flex mt-5 justify-between">
+                        <div>
+                            <h6 class="text-stone-400 text-sm">Deadline</h6>
+                            <h1 class="text-md font-bold">21 March 2025</h1>
+                        </div>
+                        <div class="flex items-center justify-center text-white h-[35px] text-center bg-blue-500 rounded-md p-3 m-0">
+                            <button class="btn text-sm">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow">
+                    <div class="flex justify-center h-[30px] w-[80px] bg-white rounded-md items-center">
+                        <h3 class="text-sm text-gray-500 text-center">Meta</h3>
+                    </div>
+                    <h2 class="font-semibold">Optimize Home Page</h2>
+                    <p class="text-sm text-gray-500">Debug using Chrome DevTools...</p>
+                    <p class="text-xs text-gray-400 mt-2">Deadline: 21 March 2025</p>
+                    <div class="flex mt-5 justify-between">
+                        <div>
+                            <h6 class="text-stone-400 text-sm">Deadline</h6>
+                            <h1 class="text-md font-bold">21 March 2025</h1>
+                        </div>
+                        <div class="flex items-center justify-center text-white h-[35px] text-center bg-blue-500 rounded-md p-3 m-0">
+                            <button class="btn text-sm">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow">
+                    <div class="flex justify-center h-[30px] w-[80px] bg-white rounded-md items-center">
+                        <h3 class="text-sm text-gray-500 text-center">Google LLC</h3>
+                    </div>
+                    <h2 class="font-semibold">Optimize Home Page</h2>
+                    <p class="text-sm text-gray-500">Debug using Chrome DevTools...</p>
+                    <p class="text-xs text-gray-400 mt-2">Deadline: 21 March 2025</p>
+                    <div class="flex mt-5 justify-between">
+                        <div>
+                            <h6 class="text-stone-400 text-sm">Deadline</h6>
+                            <h1 class="text-md font-bold">21 March 2025</h1>
+                        </div>
+                        <div class="flex items-center justify-center text-white h-[35px] text-center bg-blue-500 rounded-md p-3 m-0">
+                            <button class="btn text-sm">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow">
+                    <div class="flex justify-center h-[30px] w-[80px] bg-white rounded-md items-center">
+                        <h3 class="text-sm text-gray-500 text-center">ShopEase</h3>
+                    </div>
+                    <h2 class="font-semibold">Optimize Home Page</h2>
+                    <p class="text-sm text-gray-500">Debug using Chrome DevTools...</p>
+                    <p class="text-xs text-gray-400 mt-2">Deadline: 21 March 2025</p>
+                    <div class="flex mt-5 justify-between">
+                        <div>
+                            <h6 class="text-stone-400 text-sm">Deadline</h6>
+                            <h1 class="text-md font-bold">21 March 2025</h1>
+                        </div>
+                        <div class="flex items-center justify-center text-white h-[35px] text-center bg-blue-500 rounded-md p-3 m-0">
+                            <button class="btn text-sm">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Panel -->
+        <aside class="col-span-3 bg-white p-5 rounded-lg shadow-md">
+            <h3 class="font-semibold mb-3">Activity Log</h3>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg w-full">Clear History</button>
+            <div class="mt-4 text-sm text-gray-500">
+                <p>You have completed the task "Add Dark Mode" at 12:48:15 PM</p>
+                <p>You have completed the task "Optimize Home Page" at 12:45:00 PM</p>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script/script.js"></script>
 </body>
 </html>
